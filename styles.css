@@ -1,0 +1,162 @@
+body {
+  background: linear-gradient(-45deg, #7752fe, #8e8ffa, #7752fe, #8e8ffa);
+  background-size: 400% 400%;
+  animation: gradient 9s ease infinite;
+  height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #8e8ffa;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+  --dark-primary-theme: black;
+  --dark-secondary-theme: grey;
+  --light-primary-theme: white;
+  --light-secondary-theme: lightblue;
+}
+.light-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.bold-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.display-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.profile {
+  margin: 100px 0px 0px;
+}
+.profile-img {
+  height: 150px;
+}
+.profile-text {
+  padding-top: 10px;
+}
+.profile-name {
+  text-align: center;
+}
+
+.links {
+  padding: 0 33% 0;
+}
+.link-container {
+  height: 20%;
+  background-color: #181818;
+  border-radius: 20px;
+}
+.link-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #f0f0f0;
+  font-size: 30px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f0f0f0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.footer-icons {
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+  font-size: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.social-media-icon {
+  margin: 10px 20px 0px;
+}
+
+.bg-imgs {
+  position: absolute;
+  opacity: 0.85;
+}
+.astronaut {
+  right: 20px;
+  height: 200px;
+  animation: floating 3s infinite, ease-in-out;
+}
+.Comet {
+  right: 30%;
+  top: 400px;
+  height: 50px;
+}
+
+.planet {
+  right: 80%;
+  top: 400px;
+  height: 150px;
+  animation: flying 10s infinite;
+}
+.rock {
+  right: 0%;
+  top: 800px;
+  height: 50px;
+}
+.rocket {
+  right: 10%;
+  top: 600px;
+  height: 200px;
+}
+.saucer {
+  right: 90%;
+  top: 800px;
+  height: 100px;
+  animation: flying 5s infinite;
+}
+.thingny {
+  right: 90%;
+  top: 50px;
+  height: 100px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes flying {
+  50% {
+    transform: rotate(10deg);
+  }
+}
