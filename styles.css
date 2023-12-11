@@ -27,6 +27,10 @@ body {
   --light-primary-theme: white;
   --light-secondary-theme: lightblue;
 }
+
+a{
+  text-decoration:none;
+}
 .light-font {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
