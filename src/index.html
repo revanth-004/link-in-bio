@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revanth kumar</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./input.css" rel="stylesheet" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .Playfair {
+        font-family: "Playfair Display", serif;
+      }
+
+      * {
+        font-family: "Montserrat", system-ui;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 py-2 lg:px-72 md:px-40 px-2">
+    <div class="flex lg:h-10 items-center justify-between hidden">
+      <h4 class="font-semibold text-gray-400 lg:m-4 m-0 lg:text-base text-sm">
+        Views ✌️ : <span id="visits">1</span>
+      </h4>
+      <button
+        class="p-1 px-2 items-center text-blue-400 font-medium lg:text-base text-sm rounded-lg bg-blue-100"
+      >
+        Change Theme ✨
+      </button>
+    </div>
+
+    <div
+      class="flex bg-blue-200 lg:h-10 h-12 justify-around items-center rounded-xl my-2 glass-card bg-white/10 backdrop-blur-lg shadow-lg border-white/30"
+    >
+      <button
+        id="projectsBtn"
+        onclick="navToProjects()"
+        class="font-bold text-blue-400 bg-blue-100 m-1 w-2/4 lg:h-8 h-10 rounded-xl"
+      >
+        PROJECTS
+      </button>
+      <button
+        id="aboutBtn"
+        onclick="navToAbout()"
+        class="font-bold bg-blue-400 text-blue-100 m-1 w-2/4 lg:h-8 h-10 rounded-xl"
+      >
+        ABOUT
+      </button>
+    </div>
+    <div id="projects" class="hidden">
+      <div class="grid sm:grid-cols-2 p-2">
+        <div
+          class="lg:h-48 h-80 m-2 border-2 rounded-xl shadow-lg bg-blue-100 border-blue-200"
+        >
+          <img
+            class="lg:h-3/4 h-5/6 w-full rounded-2xl object-cover lg:p-1 p-2"
+            src="/img/pet-first.png"
+            alt=""
+          />
+          <div class="flex lg:h-1/4 p-2 justify-between items-center">
+            <h5 class="text-gray-500 font-semibold">Pet-First</h5>
+
+            <button
+              class="px-4 lg:text-sm text-lg font-medium text-center rounded-full bg-blue-300 text-white"
+              onclick="window.open('https://revanth-004.github.io/pet-first/', '_blank')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="lg:h-48 h-80 m-2 border-2 rounded-xl shadow-lg bg-blue-100 border-blue-200"
+        >
+          <img
+            class="lg:h-3/4 h-5/6 w-full rounded-2xl object-cover lg:p-1 p-2"
+            src="/img/movieland.png"
+            alt=""
+          />
+          <div class="flex lg:h-1/4 p-2 justify-between items-center">
+            <h5 class="text-gray-500 font-semibold">MovieLand</h5>
+
+            <button
+              class="px-4 lg:text-sm text-lg font-medium text-center rounded-full bg-blue-300 text-white"
+              onclick="window.open('https://movie-collections-react.netlify.app/', '_blank')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="lg:h-48 h-80 m-2 border-2 rounded-xl shadow-lg bg-blue-100 border-blue-200"
+        >
+          <img
+            class="lg:h-3/4 h-5/6 w-full rounded-2xl object-cover lg:p-1 p-2"
+            src="/img/cash-app.png"
+            alt=""
+          />
+          <div class="flex lg:h-1/4 p-2 justify-between items-center">
+            <h5 class="text-gray-500 font-semibold">Cash-app</h5>
+
+            <button
+              class="px-4 lg:text-sm text-lg font-medium text-center rounded-full bg-blue-300 text-white"
+              onclick="window.open('https://revanth-004.github.io/cash-app/', '_blank')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="lg:h-48 h-80 m-2 border-2 rounded-xl shadow-lg bg-blue-100 border-blue-200"
+        >
+          <img
+            class="lg:h-3/4 h-5/6 w-full rounded-2xl object-cover lg:p-1 p-2"
+            src="/img/concapps.png"
+            alt=""
+          />
+          <div class="flex lg:h-1/4 p-2 justify-between items-center">
+            <h5 class="text-gray-500 font-semibold">Concapps</h5>
+
+            <button
+              class="px-4 lg:text-sm text-lg font-medium text-center rounded-full bg-blue-300 text-white"
+              onclick="window.open('https://revanth-004.github.io/concapps-gsap/', '_blank')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="lg:h-48 h-80 m-2 border-2 rounded-xl shadow-lg bg-blue-100 border-blue-200"
+        >
+          <img
+            class="lg:h-3/4 h-5/6 w-full rounded-2xl object-cover lg:p-1 p-2"
+            src="/img/zland.png"
+            alt=""
+          />
+          <div class="flex lg:h-1/4 p-2 justify-between items-center">
+            <h5 class="text-gray-500 font-semibold">Zland</h5>
+
+            <button
+              class="px-4 lg:text-sm text-lg font-medium text-center rounded-full bg-blue-300 text-white"
+              onclick="window.open('https://revanth-004.github.io/Zland/', '_blank')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="relative">
+      <div
+        class="bg-blue-200 rounded-3xl glass-card bg-white/10 backdrop-blur-lg shadow-lg border-white/30"
+      >
+        <div class="flex items-center">
+          <img
+            class="lg:h-28 lg:w-28 h-32 w-32 m-3 rounded-xl object-cover"
+            src="/img/black.jpg"
+            alt=""
+          />
+          <h1 class="Playfair text-blue-400 font-bold text-4xl m-2">
+            I'm<br />Revanth kumar
+          </h1>
+        </div>
+        <button
+          class="font-semibold p-2 border-blue-200 border-8 w-full rounded-full text-left bg-blue-100 text-gray-600 text-sm"
+        >
+          🔗 Resume
+        </button>
+      </div>
+
+      <div class="my-4 lg:mx-0 mx-4">
+        <h5 class="font-bold text-gray-600 text-xl">
+          Hey 👋, I'm Web Developer
+        </h5>
+        <p class="text-sm text-gray-400">
+          Hi, I'm Revanth Kumar, a college student passionate about web
+          development and design. Check out links for contact.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-bold text-gray-600 text-xl lg:mx-0 mx-4">About</h2>
+        <div class="grid lg:grid-cols-3 grid-cols-2 p-2">
+          <!--================POPOVER-HackerRank================-->
+          <div
+            popover
+            id="HackerRank"
+            class="lg:w-1/4 md:w-1/3 sm:w-1/2 border-2 p-0 rounded-xl bg-white/30 backdrop-blur-sm shadow-lg"
+          >
+            <div
+              class="flex h-1/4 text-gray-400 font-medium bg-gray-100 py-2 px-4 justify-between"
+            >
+              <h5>Hackerrank</h5>
+              <button
+                onclick="window.open('https://www.hackerrank.com/profile/revanth_004', '_blank')"
+              >
+                ➡️
+              </button>
+            </div>
+            <div class="flex h-3/4 py-2 px-4 items-center">
+              <img
+                class="h-12 w-12 mx-2 object-cover"
+                src="/img/python-gold.png"
+                alt=""
+              />
+              <img
+                class="h-12 w-12 mx-2 object-cover"
+                src="/img/c-silver.png"
+                alt=""
+              />
+              <img
+                class="h-12 w-12 mx-2 object-cover"
+                src="/img/sql-silver.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!--================POPOVER-LeetCode================-->
+          <div
+            popover
+            id="LeetCode"
+            class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-5/6 border-2 p-0 rounded-xl bg-white/30 backdrop-blur-sm shadow-lg"
+          >
+            <div
+              class="flex h-1/4 py-2 px-4 justify-between font-medium text-gray-400 bg-gray-100"
+            >
+              <h5>LeetCode</h5>
+              <button
+                onclick="window.open('https://leetcode.com/u/Revanth-kumar-s/', '_blank')"
+              >
+                ➡️
+              </button>
+            </div>
+            <div class="flex flex-wrap h-3/4 py-2 px-4 items-center">
+              <div class="flex m-1 items-center">
+                <button
+                  class="px-2 text-sm text-gray-600 font-light bg-gray-200 rounded-full"
+                >
+                  Python
+                </button>
+                <p class="text-[.85rem] text-gray-500 mx-1">x2</p>
+              </div>
+              <div class="flex m-1 items-center">
+                <button
+                  class="px-2 text-sm font-light text-gray-600 bg-gray-200 rounded-full"
+                >
+                  Java
+                </button>
+                <p class="text-[.85rem] text-gray-500 mx-1">x16</p>
+              </div>
+              <div class="flex m-1 items-center">
+                <button
+                  class="px-2 text-sm font-light text-gray-600 bg-gray-200 rounded-full"
+                >
+                  MySQL
+                </button>
+                <p class="text-[.85rem] text-gray-500 mx-1">x19</p>
+              </div>
+              <div class="flex mx-2 items-center">
+                <button
+                  class="px-2 text-gray-600 font-light text-sm bg-gray-200 rounded-full"
+                >
+                  C
+                </button>
+                <p class="text-[.85rem] text-gray-500 mx-1">x1</p>
+              </div>
+              <div class="flex mx-2 m-1">
+                <button
+                  class="px-2 text-gray-600 font-light text-sm bg-gray-200 rounded-full"
+                >
+                  JavaScript
+                </button>
+                <p class="text-[.85rem] text-gray-500 mx-1">x2</p>
+              </div>
+            </div>
+          </div>
+
+          <!--================POPOVER-GitHub================-->
+          <div
+            popover
+            id="GitHub"
+            class="lg:w-1/4 md:w-1/3 sm:w-1/2 w-5/6 border-2 p-0 rounded-xl bg-white/30 backdrop-blur-sm shadow-lg"
+          >
+            <div
+              class="flex h-1/4 py-2 px-4 justify-between font-medium text-gray-400 bg-gray-100"
+            >
+              <h5>GitHub</h5>
+              <button
+                onclick="window.open('https://github.com/revanth-004', '_blank')"
+              >
+                ➡️
+              </button>
+            </div>
+            <div class="flex flex-wrap h-3/4 py-2 px-4 items-center">
+              <div class="flex m-1 items-center">
+                <button
+                  class="px-2 py-1 text-sm text-gray-600 font-light bg-gray-200 rounded-md"
+                  onclick="window.open('https://revanth-004.github.io/pet-first/', '_blank')"
+                >
+                  🐕‍🦺 Pet-first
+                </button>
+              </div>
+              <div class="flex m-1 items-center">
+                <button
+                  class="px-2 py-1 text-sm font-light text-gray-600 bg-gray-200 rounded-md"
+                  onclick="window.open('https://movie-collections-react.netlify.app/', '_blank')"
+                >
+                  🎞️ MovieLand
+                </button>
+              </div>
+              <div class="flex m-1 items-center">
+                <button
+                  class="px-2 py-1 text-sm font-light text-gray-600 bg-gray-200 rounded-md"
+                  onclick="window.open('https://revanth-004.github.io/cash-app/', '_blank')"
+                >
+                  💲 Cash-App
+                </button>
+              </div>
+              <div class="flex mx-2 items-center">
+                <button
+                  class="px-2 py-1 text-gray-600 font-light text-sm bg-gray-200 rounded-md"
+                  onclick="window.open('https://revanth-004.github.io/concapps-gsap/', '_blank')"
+                >
+                  🏋️‍♂️ Concapps
+                </button>
+              </div>
+              <div class="flex mx-2 m-1">
+                <button
+                  class="px-2 py-1 text-gray-600 font-light text-sm bg-gray-200 rounded-md"
+                  onclick="window.open('https://revanth-004.github.io/Zland/', '_blank')"
+                >
+                  🌆 Zland
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--================HackerRank-LINK================-->
+
+          <button
+            popovertarget="HackerRank"
+            class="flex justify-between glass-card backdrop-blur-lg shadow-lg border-white/30 py-2 px-4 m-2 border-2 rounded-xl"
+          >
+            <h5 class="text-gray-400 font-medium">HackerRank</h5>
+          </button>
+
+          <!--================LeetCode-LINK================-->
+          <button
+            popovertarget="LeetCode"
+            class="flex justify-between glass-card backdrop-blur-lg shadow-lg border-white/30 py-2 px-4 m-2 border-2 rounded-xl"
+          >
+            <h5 class="text-gray-400 font-medium">LeetCode</h5>
+          </button>
+
+          <!--================GitHub-LINK================-->
+          <button
+            popovertarget="GitHub"
+            class="flex justify-between glass-card backdrop-blur-lg shadow-lg border-white/30 py-2 px-4 m-2 border-2 rounded-xl"
+          >
+            <h5 class="text-gray-400 font-medium">GitHub</h5>
+          </button>
+        </div>
+      </div>
+
+      <div class="my-4">
+        <h2 class="font-bold text-xl text-gray-600 lg:mx-0 mx-4">Connect</h2>
+
+        <div class="flex flex-wrap lg:p-2 py-2">
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://www.instagram.com/revanthsuresh_', '_blank')"
+          >
+            <img class="mx-1 h-5" src="/img/instagram.png" alt="" />Instagram
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.location.href='mailto:revanthsuresh452004@gmail.com';"
+          >
+            <img
+              class="mx-1 h-5"
+              href="mailto:revanthsuresh452004@gmail.com"
+              src="/img/mail.webp"
+              alt=""
+            />E-mail
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://www.linkedin.com/in/revanth-kumar-s/', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 rounded-full"
+              src="/img/linkedin.png"
+              alt=""
+            />LinkedIn
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://open.spotify.com/user/kb50wusi5ob2324gee0fwdmnt?si=gHNM1qb4TtqYIPLZA4_oPg', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 rounded-full"
+              src="/img/Spotify.png"
+              alt=""
+            />Spotify
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://wa.me/qr/CNGDNOYWWUKLE1 ', '_blank')"
+          >
+            <img class="mx-1 h-5" src="/img/WhatsApp.png" alt="" />Whatsapp
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://github.com/revanth-004', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 rounded-full"
+              src="/img/Github.png"
+              alt=""
+            />Github
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('http://uiverse.io/profile/revanth-004', '_blank')"
+          >
+            <img class="mx-1 h-5" src="/img/uiverse.png" alt="" />UIverse
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://codepen.io/Revanth004', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 rounded-full"
+              src="/img/codepen.png"
+              alt=""
+            />Codepen
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://signal.me/#eu/-azdGH40E85tKKUnNlZvxDAAem18IMRz5icWggbTqFUAf5QjlKxKG6jBRMG5vByb', '_blank')"
+          >
+            <img class="mx-1 h-5 rounded" src="/img/signal.png" alt="" />Signal
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://leetcode.com/Revanth-kumar-s/', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 bg-black rounded"
+              src="/img/leetcode.png"
+              alt=""
+            />LeetCode
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://www.hackerrank.com/profile/revanth_004', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 rounded"
+              src="/img/hackerrank.png"
+              alt=""
+            />HackerRank
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://www.figma.com/@revanthkumar', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 rounded-full"
+              src="/img/figma.png"
+              alt=""
+            />Figma
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.location.href='mailto:revanthkumar452004@proton.me';"
+          >
+            <img class="mx-1 h-5 rounded" src="/img/proton.jpg" alt="" />Proton
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://www.reddit.com/user/Realistic_Bend_8617/', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 w-5 rounded-full object-cover"
+              src="/img/reddit.png"
+              alt=""
+            />Reddit
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://boxd.it/bkQgb', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 w-5 rounded"
+              src="/img/letterboxd.png"
+              alt=""
+            />Letterboxd
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://dribbble.com/revanth-004', '_blank')"
+          >
+            <img
+              class="mx-1 h-5 w-5 rounded"
+              src="/img/dribbble.png"
+              alt=""
+            />Dribbble
+          </button>
+          <button
+            class="flex text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+            onclick="window.open('https://twitter.com/Revanthsuresh_', '_blank')"
+          >
+            <img class="mx-1 h-5 w-5 rounded" src="/img/x.png" alt="" />Twitter
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9167e67df8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
