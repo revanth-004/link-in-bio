@@ -9,7 +9,7 @@ import Project from "./components/Project";
 
 function App() {
   return (
-    <main className="bg-gray-100 min-h-screen">
+    <main className="bg-bgPrimary min-h-screen ">
       <div className="py-2 lg:px-72 md:px-40 px-2">
         <Navbar />
         <Titlebar />

@@ -1,6 +1,0 @@
-html[data-theme='gradient-blue-purple'] {
-  --color-primary: linear-gradient(to right, #3b82f6, #8b5cf6);
-  --color-secondary: #8b5cf6;
-  --color-bg: #f9fafb;
-  --color-text: #111827;
-}

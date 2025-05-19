@@ -9,7 +9,7 @@ const SocialLink = ({ name, icon, url, isEmail = false }) => {
 
   return (
     <button
-      className="flex backdrop-blur-lg shadow-lg border-white/30 text-gray-600 text-sm font-light px-2 py-1 m-2 border-2 rounded-full items-center"
+      className="flex shadow-md  shadow-primaryShadow border-btnBorder text-primaryPara text-sm font-normal px-2 py-1 m-2 border-2 rounded-full items-center"
       onClick={handleClick}
     >
       <img

@@ -44,8 +44,7 @@ const Leetcode = () => {
   const today = new Date();
 
   return (
-    <div className="flex flex-col shadow-lg border-white/30 py-4 px-6 m-2 border-2 rounded-xl">
-     
+    <div className="flex flex-col shadow-md  shadow-primaryShadow border-btnBorder py-4 px-6 m-2 border-2 rounded-xl">
       <div className="flex items-center mb-4">
         <img
           src={userData?.avatar || ""}
@@ -53,10 +52,10 @@ const Leetcode = () => {
           className="h-12 w-12 rounded-md mr-3"
         />
         <div>
-          <h5 className="text-gray-500 font-medium">
+          <h5 className="text-secondaryHeading font-medium">
             {userData?.name || "Loading..."}
           </h5>
-          <h3 className="text-xs text-gray-400">
+          <h3 className="text-xs text-secondaryPara">
             {userData?.username || "Loading..."}
           </h3>
         </div>
@@ -85,15 +84,15 @@ const Leetcode = () => {
         />
       </div>
       <div className="flex gap-3">
-        <h5 className="text-gray-500 font-medium text-xs">
+        <h5 className="text-secondaryHeading font-medium text-xs">
           <span className="text-green-500">Easy </span>
           {profileData?.easySolved || "0"}/{profileData?.totalEasy || "0"}
         </h5>
-        <h5 className="text-gray-500 font-medium text-xs">
+        <h5 className="text-secondaryHeading font-medium text-xs">
           <span className="text-yellow-500">Med. </span>
           {profileData?.mediumSolved || "0"}/{profileData?.totalMedium || "0"}
         </h5>
-        <h5 className="text-gray-500 font-medium text-xs">
+        <h5 className="text-secondaryHeading font-medium text-xs">
           <span className="text-red-500">Hard </span>
           {profileData?.hardSolved || "0"}/{profileData?.totalHard || "0"}
         </h5>

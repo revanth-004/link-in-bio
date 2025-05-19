@@ -4,7 +4,9 @@ import SocialLink from "./SocialLink";
 const Connect = () => {
   return (
     <div className="my-4">
-      <h2 className="font-bold text-xl text-gray-600 lg:mx-0 mx-4">Connect</h2>
+      <h2 className="font-bold text-xl text-primaryHeading lg:mx-0 mx-4">
+        Connect
+      </h2>
       <div className="flex flex-wrap lg:p-2 py-2">
         {socialLinks.map((link, index) => (
           <SocialLink
