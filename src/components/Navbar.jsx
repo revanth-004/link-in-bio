@@ -45,7 +45,7 @@ const Navbar = () => {
     <div>
       <div className="flex lg:h-10 items-center justify-between mx-4 mb-4">
         <h4 className="font-semibold text-gray-400 lg:m-4 m-0 lg:text-base text-sm">
-          Views ✌️ : <span id="visits">{viewCount}</span>
+          Viewers ✌️ : <span id="visits">{viewCount}</span>
         </h4>
         <button className="p-1 px-2 items-center text-gray-400 font-medium lg:text-base text-sm rounded-lg bg-gray-100 backdrop-blur-lg shadow-md border-white/30">
           Change Theme ✨
