@@ -6,6 +6,7 @@ import Connect from "./components/Connect";
 import Github from "./components/Github";
 import Leetcode from "./components/Leetcode";
 import Project from "./components/Project";
+import Credits from "./components/Credits";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/project" element={<Project />} />
         </Routes>
         <Connect />
+        <Credits/>
       </div>
     </main>
   );
