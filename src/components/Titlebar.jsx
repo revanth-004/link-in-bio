@@ -14,8 +14,9 @@ const Titlebar = () => {
             Revanth kumar
           </h1>
         </div>
+
         <button
-          onClick="window.open('Resume.pdf', '_blank')"
+          onClick={() => window.open("/Resume.pdf", "_blank")}
           className="font-semibold p-2  border-2 w-full rounded-full text-left bg-gray-200  text-gray-600 text-sm backdrop-blur-md shadow-sm border-white/30"
         >
           🔗 Resume
