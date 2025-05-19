@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --color-bg: #ffffff;
+    --color-text: #000000;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+}
+/* @import "./themes/light.css";
+@import "./themes/dark.css";
+@import "./themes/blue-purple.css";
+@import "./themes/gradient-blue-purple.css";
+@import "./themes/gradient-blue-pink-purple.css"; */
+
+.color-empty {
+  fill: #f2f2f2; /* very light gray / near white */
+}
+.color-scale-1 {
+  fill: #d6f5d6; /* light green */
+}
+.color-scale-2 {
+  fill: #7fe87f; /* medium-light green */
+}
+.color-scale-3 {
+  fill: #22c522; /* medium green */
+}
+.color-scale-4 {
+  fill: #007f00; /* dark green */
+}
