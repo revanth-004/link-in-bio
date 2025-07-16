@@ -2,7 +2,7 @@ export const socialLinks = [
   {
     name: "Instagram",
     icon: "instagram.png",
-    url: "https://www.instagram.com/revanthsuresh_",
+    url: "https://www.instagram.com/revanthkumar_004",
   },
   {
     name: "E-mail",
