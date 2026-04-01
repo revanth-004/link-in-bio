@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
-const Updates = () => {
+const Visit = () => {
   const navigate = useNavigate();
   return (
     <div className="relative ">
       <h2 className="font-bold text-primaryHeading text-xl lg:mx-0 mx-4">
-        Updates
+        Visit
       </h2>
       <div className="flex flex-wrap lg:mx-0 mx-4">
         <button
@@ -14,21 +14,28 @@ const Updates = () => {
         >
           <h5 className="text-primaryPara font-medium">Project 📜</h5>
         </button>
-        <button
+        <a
+          className="flex shadow-md  shadow-primaryShadow border-btnBorder py-2 px-4 m-2 border-2 rounded-xl"
+          href="https://digital-garden-revanth-004.vercel.app/"
+          target="_blank"
+        >
+          <h5 className="text-primaryPara font-medium">Digital Garden 🏠</h5>
+        </a>
+        {/* <button
           className="flex shadow-md  shadow-primaryShadow border-btnBorder py-2 px-4 m-2 border-2 rounded-xl"
           onClick={() => navigate("/leetcode")}
         >
           <h5 className="text-primaryPara font-medium">LeetCode 🧠</h5>
-        </button>
-        <button
+        </button> */}
+        {/* <button
           className="flex shadow-md  shadow-primaryShadow border-btnBorder py-2 px-4 m-2 border-2 rounded-xl"
           onClick={() => navigate("/github")}
         >
           <h5 className="text-primaryPara font-medium">Github 🐈‍⬛</h5>
-        </button>
+        </button> */}
       </div>
     </div>
   );
 };
 
-export default Updates;
+export default Visit;

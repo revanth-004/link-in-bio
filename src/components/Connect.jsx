@@ -7,7 +7,7 @@ const Connect = () => {
       <h2 className="font-bold text-xl text-primaryHeading lg:mx-0 mx-4">
         Connect
       </h2>
-      <div className="flex flex-wrap lg:p-2 py-2">
+      <div className="flex flex-wrap justify-center lg:p-2 py-2">
         {socialLinks.map((link, index) => (
           <SocialLink
             key={index}
