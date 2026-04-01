@@ -8,9 +8,7 @@ const Contact = () => {
 
   const handleSend = () => {
     const subject = encodeURIComponent(`Message from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\n${message}`,
-    );
+    const body = encodeURIComponent(message);
     window.location.href = `mailto:revanthkumar452004@proton.me?subject=${subject}&body=${body}`;
   };
 
