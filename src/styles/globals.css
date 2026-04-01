@@ -6,6 +6,14 @@
 
 @layer base {
   :root {
+    /* Theme picker */
+    --color-from: #fff;
+    --color-via: #fff;
+    --color-to: #aabbcc;
+    --color-title:#000;
+    --color-body:#000;
+    --color-text:#000;
+
     --color-theme: #818cf8;
     --color-bg-primary: #f3f4f6;
     --color-title-bar: #e5e7eb;
@@ -22,15 +30,15 @@
 
 .light-blue {
   --color-theme: #2563eb;
-    --color-bg-primary: #f3f4f6;
-    --color-title-bar: #e5e7eb;
-    --color-title-text: #2563eb;
-    --color-primary-heading: #4b5563;
-    --color-secondary-heading: #6b7280;
-    --color-primary-para: #6b7280;
-    --color-secondary-para: #9ca3af;
-    --color-btn-border: #ffffff4d;
-    --color-shadow: #0000001a;
+  --color-bg-primary: #f3f4f6;
+  --color-title-bar: #e5e7eb;
+  --color-title-text: #2563eb;
+  --color-primary-heading: #4b5563;
+  --color-secondary-heading: #6b7280;
+  --color-primary-para: #6b7280;
+  --color-secondary-para: #9ca3af;
+  --color-btn-border: #ffffff4d;
+  --color-shadow: #0000001a;
 }
 .light-green {
   --color-theme: #86efac;
@@ -70,7 +78,7 @@
   --color-btn-border: #ffedd558;
   --color-shadow: #000000;
 }
-.dark-purple{
+.dark-purple {
   --color-theme: #8b5cf6;
   --color-bg-primary: #171717;
   --color-title-bar: #7c3aed;
@@ -87,19 +95,6 @@
   font-family: "Yeseva One", serif;
 }
 
-/* Leetcode Calender*/
-.color-empty {
-  fill: #f2f2f2; /* very light gray / near white */
-}
-.color-scale-1 {
-  fill: #d6f5d6; /* light green */
-}
-.color-scale-2 {
-  fill: #7fe87f; /* medium-light green */
-}
-.color-scale-3 {
-  fill: #22c522; /* medium green */
-}
-.color-scale-4 {
-  fill: #007f00; /* dark green */
+@theme{
+  
 }
